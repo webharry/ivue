@@ -6,6 +6,8 @@ import router from './router'
 import iView from 'iview'
 import 'iview/dist/styles/iview.css'
 import foxiview from '../src/index.js'
+// import foxiview from '../dist/foxiview'
+// import '../dist/static/foxiview.css'
 
 Vue.use(iView)
 Vue.use(foxiview)
