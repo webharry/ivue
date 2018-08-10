@@ -45,8 +45,20 @@
           "desc": "Button 按钮",
           "name": "button",
           "path": "/button"
+        },
+        {
+          "desc": "alert 弹框",
+          "name": "alert",
+          "path": "/alert"
         }
       ]
+    }
+  ],
+  "过滤器": [
+    {
+      "name": "filters",
+      "path": "/filters",
+      "desc": "filters"
     }
   ]
 }

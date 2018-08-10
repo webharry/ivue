@@ -1,17 +1,20 @@
 import Vue from 'vue'
 import iView from 'iview'
 import 'iview/dist/styles/iview.css'
-import xAlert from './components/alert'
+import xalert from './components/alert/'
+import * as filters from './filters'
 
 Vue.use(iView)
 
 const components = [
-    xAlert
+    xalert
 ]
 
 
 const install = function (Vue) {
-    if (install.installed) return;
+    Object.keys(filters).forEach(key => {
+        Vue.filter(key, filters[key])
+    })
     components.map(component => {
         Vue.component(component.name, component)
     })
@@ -23,5 +26,5 @@ if (typeof window !== 'undefined' && window.Vue) {
 
 export default {
     install,
-    xAlert
+    xalert
 }
