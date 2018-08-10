@@ -4,7 +4,6 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import foxiview from '../src/index'
-// import '../dist/static/foxiview.css'
 
 
 Vue.use(foxiview)
