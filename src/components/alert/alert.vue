@@ -1,14 +1,26 @@
 <template>
     <div>
-        <div class="box">
-            <p>这是一个测试例子</p>
+        <div class="box" v-click-outside="handleClose">
+            <p v-show="visible">这是一个测试例子</p>
         </div>
         <Button>Default</Button>
     </div>
 </template>
 <script>
+ import {directive as clickOutside} from 'v-click-outside-x';
 export default {
-    name: 'xalert'
+    name: 'xalert',
+    data() {
+        return {
+            visible: false,
+        }
+    },
+    directives: { clickOutside },
+    methods:{
+        handleClose () {
+            this.visible = !this.visible;
+        },
+    }
 }
 </script>
 <style scoped>
