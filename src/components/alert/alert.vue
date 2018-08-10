@@ -1,7 +1,7 @@
 <template>
     <div>
         <div class="box" v-click-outside="handleClose">
-            <p v-show="visible">这是一个测试例子</p>
+            <p v-show="visible">这是一个测试例子23</p>
         </div>
         <Button>Default</Button>
     </div>
