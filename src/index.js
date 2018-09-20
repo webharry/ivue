@@ -3,11 +3,13 @@ import iView from 'iview'
 import 'iview/dist/styles/iview.css'
 import xalert from './components/alert/'
 import * as filters from './filters'
+import xdetail from './components/detail/'
 
 Vue.use(iView)
 
 const components = [
-    xalert
+    xalert,
+    xdetail
 ]
 
 
@@ -26,5 +28,6 @@ if (typeof window !== 'undefined' && window.Vue) {
 
 export default {
     install,
-    xalert
+    xalert,
+    xdetail
 }
