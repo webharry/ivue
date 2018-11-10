@@ -1,7 +1,7 @@
 <template>
     <div class="box">
         <Menu v-if="labels.titles&&labels.titles.length" mode="horizontal" :theme="theme1" active-name="1">
-            <MenuItem v-for="(title,index) in labels.titles" :name="index">
+            <MenuItem v-for="(title,index) in labels.titles" :name="index" :key="index">
                 <!-- <Icon type="ios-paper" /> -->
                 {{title}}
             </MenuItem>

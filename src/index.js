@@ -4,12 +4,18 @@ import 'iview/dist/styles/iview.css'
 import xalert from './components/alert/'
 import * as filters from './filters'
 import xdetail from './components/detail/'
+import xUpload from './components/upload'
+import vueUploadWeb from 'vue-upload-web'
+import xProgress from './components/progress'
 
 Vue.use(iView)
+Vue.use(vueUploadWeb)
 
 const components = [
     xalert,
-    xdetail
+    xdetail,
+    xUpload,
+    xProgress
 ]
 
 
@@ -29,5 +35,7 @@ if (typeof window !== 'undefined' && window.Vue) {
 export default {
     install,
     xalert,
-    xdetail
+    xdetail,
+    xUpload,
+    xProgress
 }

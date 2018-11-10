@@ -50,6 +50,16 @@
           "desc": "alert 弹框",
           "name": "alert",
           "path": "/alert"
+        },
+        {
+            "desc": "upload文件上传",
+            "name": "upload",
+            "path": "/upload"
+        },
+        {
+            "desc": "progress进度条",
+            "name": "progress",
+            "path": "/progress"
         }
       ]
     }
