@@ -9,7 +9,10 @@ const path = require('path')
 const chalk = require('chalk')
 const webpack = require('webpack')
 const config = require('../config')
-const webpackConfig = require('./webpack.demo.conf')
+
+const argv = require('yargs').argv
+let confName = argv.demo
+const webpackConfig = confName ? require('./webpack.demo.conf') : require('./webpack.prod.conf')
 
 const spinner = ora('building for production...')
 spinner.start()
