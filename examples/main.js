@@ -6,6 +6,7 @@ import router from './router'
 import foxiview from '../src/index'
 
 
+
 Vue.use(foxiview)
 
 Vue.config.productionTip = false

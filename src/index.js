@@ -4,17 +4,15 @@ import 'iview/dist/styles/iview.css'
 import xalert from './components/alert/'
 import * as filters from './filters'
 import xdetail from './components/detail/'
-import xUpload from './components/upload'
-import vueUploadWeb from 'vue-upload-web'
 import xProgress from './components/progress'
+import jquery from 'jquery'
+console.log(jquery)
 
 Vue.use(iView)
-Vue.use(vueUploadWeb)
 
 const components = [
     xalert,
     xdetail,
-    xUpload,
     xProgress
 ]
 
@@ -36,6 +34,5 @@ export default {
     install,
     xalert,
     xdetail,
-    xUpload,
     xProgress
 }

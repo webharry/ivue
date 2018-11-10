@@ -18,5 +18,5 @@
 
 ### 基本用法
 <div class="dome-alert demo-block">
-    <xUpload></xUpload>
+    <!-- <xUpload></xUpload> -->
 </div>
